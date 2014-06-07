@@ -1,0 +1,62 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+Editace - Funkce
+
+{/}
+
+{block #content}
+<p class="well well-sm">
+    Pořadí je váha podle které probíhá výpis funkcí. <br/>
+    Funkce s číslem 1 je nejvyšš.
+</p>
+<div class="row">
+    <div class="col-sm-8">
+        <div class="functionForm">
+            {snippet user_form}
+                {form editFunction, class=>'form-inline'}
+                    <div class="form-group col-xs-4">
+                        {input id}
+                        {input name, class=>'form-control'}
+                    </div>
+
+                    <div class="form-group col-xs-4">
+                          <div class="checkbox">
+                            {label main}
+                            {input main} Funkce ve vedení střediska
+                            {/}
+                        </div>
+                        <div class="checkbox">
+                            {label troop}
+                            {input troop} Vedení oddílu
+                            {/}
+                        </div>
+                    </div>
+
+                    <div class="form-group col-xs-2">
+                        {input level, class=>'form-control'}
+                    </div>
+
+                    <div class="form-group">
+                        {input save, class=>'btn btn-success'}
+                    </div>
+                {/}
+            {/}
+        </div>
+        <h4>Funkce</h4>
+        <ul class="function-list list-unstyled">
+            {foreach $functions as $function}
+                <li>
+                    <a title="Editovat funkci" class="btn btn-info btn-xs ajax" n:href="functionEdit!, $function->id"><i class="fa fa-edit"></i></a>
+                    <a title="Smazat funkci" class="btn btn-danger btn-xs" n:href="removeFunction!, $function->id"><i class="fa fa-trash-o"></i></a>
+                    <a class="btn btn-xs {if $function->main} btn-info {else} btn-primary{/}"> {if $function->main} <i class="fa fa-check"> </i> {else} <i class="fa fa-times"></i>{/} Vedení střediska </a>
+                    <a class="btn btn-xs {if $function->troop} btn-info {else} btn-primary{/}"> {if $function->troop} <i class="fa fa-check"> </i> {else} <i class="fa fa-times"></i>{/} Vedení oddílu </a>
+                    <span style="margin-right: 10px"></span>
+                    <a title="Kliknutím editujte funkci." class="ajax name" n:href="functionEdit!, $function->id">{$function->name}</a>
+                </li>
+            {/}
+        </ul>
+    </div>
+</div>

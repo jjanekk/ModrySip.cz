@@ -1,0 +1,48 @@
+<div>
+    <div class="row">
+        <div class="col-lg-10">
+
+            {if $isAdmin}
+                <hr/>
+                <h4>Přidat obrázek</h4>
+                {control addImage}
+                <hr/>
+            {/}
+
+            {if isset($files) && count($files) > 0}
+            <div class="gallery">
+                <h4>Galerie</h4>
+                {if $isAdmin}
+                <p class="well well-sm">
+                    Zeleně ohraničený obázek je náhledový. Pokud takový neexistuje, je náhledový obrázek považován za první obrázek ze seznamu.
+                </p>
+                {/}
+
+                {foreach $files as $file}
+                    {first 4}
+                    <div class="row">
+                    {/}
+                    <div class="col-md-3">
+                        <div class="thumbnail {if $isAdmin && $file->isViewImage} viewImage-img {/}">
+                            <a data-lightbox="roadtrip"  href="{$basePath}/{$dir}/{$file->getName()}">
+                                <img {if $isAdmin && $file->isViewImage} viewImage-img {/} src="{$basePath|noescape}/{$dir}/{$file->getName(true)}" alt="{$file->description}"/>
+                                {if $isAdmin}
+                                <div class="remove">
+                                    <a title="Smazat obrázek" class="link" n:href="remove! $file->id"><i class="fa fa-trash-o"></i></a>
+                                </div>
+                                <div class="viewImage">
+                                    <a title="Nastavit jako náhledový obrázek" class="link" n:href="homeImage! $file->id"><i class="fa fa-anchor"></i></a>
+                                </div>
+                                {/}
+                            </a>
+                        </div>
+                    </div>
+                    {last 4}
+                       </div>
+                    {/}
+                {/}
+            {/}
+
+        </div>
+    </div>
+</div>

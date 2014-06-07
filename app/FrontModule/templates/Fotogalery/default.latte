@@ -1,0 +1,47 @@
+{define #title}
+  Fotogalerie
+{/}
+
+{block #content}
+    <section id="page-content">
+        <h2>Fotogalerie</h2>
+
+
+        <div class="gallery-list">
+            <div class="row">
+                <div class="col-md-10">
+                    <div style="margin-bottom: 20px">
+                        {form filterFormGalleries class=>'form-inline'}
+                        <div class="form-group">
+                            {label schoolYear class=>'sr-only' /}
+                            {input schoolYear}
+                        </div>
+                        <div class="form-group">
+                            {input filter class => 'btn btn-success'}
+                        </div>
+                        {/}
+                    </div>
+                    <hr/>
+                </div>
+
+                {foreach $actions->orderBy('date_from DESC') as $action}
+                    <div n:if="$action->hasGalleryWithImage()" class="col-md-6">
+                        <div class="gallery-item">
+                            <h3>
+                                <a n:href="Gallery $action->getGallery()->id">
+                                    {$action->name}
+                                    <span class="$action-date">
+                                     {$action->date_from|date:'j.n.Y'}
+                                     {if $action->date_to && $action->date_to > '0000-00-00'} - {$action->date_to|date:'j.n.Y'} {/}
+                                </span>
+                                </a>
+                            </h3>
+                            <div class="$action-text">
+                                {$action->getGallery()->description|noescape}
+                            </div>
+                        </div>
+                    </div>
+                {/}
+            </div>
+        </div>
+    </section>

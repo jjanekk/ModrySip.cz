@@ -1,0 +1,36 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+    <a title="Zpět na seznam." class="btn btn-primary" n:href="default id=>null">
+        <i class="fa fa-backward"></i> Zpět na seznam
+    </a>
+    Slider: {$troop->name}
+{/}
+
+{block #content}
+
+    <div style="margin-bottom: 10px">
+        <a title="Editovat" class="btn btn-success" n:href="edit null"><i class="fa fa-plus"></i> Nová položka</a>
+        <hr/>
+    </div>
+
+    <div class="slider">
+        {foreach $slider as $slide}
+            <div class="slideBox">
+                <div class="button">
+                    <a title="Editovat" class="btn btn-success" n:href="edit $slide->id"><i class="fa fa-edit"></i></a>
+                    <a title="Smazat" class="btn btn-danger" n:href="remove! $slide->id"><i class="fa fa-trash-o"></i></a>
+                </div>
+                <div class="slide">
+                    <img src="{$basePath}/Galleries/slider/{$slide->getFile()->getName()}" alt=""/>
+                    <div class="title">
+                        <div class="text">
+                            {$slide->name}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/}
+    </div>

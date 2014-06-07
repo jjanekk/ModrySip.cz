@@ -1,0 +1,24 @@
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        {foreach $sliders as $slide}
+        <div class="item {first}active{/}">
+            <img src="{$basePath}/Galleries/slider/{$slide->getFile()->getName()}" alt="image description"/>
+            <div class="carousel-caption">
+                <h3>{$slide->name}</h3>
+            </div>
+        </div>
+        {/}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+    <div class="line"></div>
+</div>

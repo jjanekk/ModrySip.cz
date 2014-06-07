@@ -1,0 +1,50 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+parameters:
+
+php:
+    date.timezone: Europe/Prague
+    # zlib.output_compression: yes
+
+nette:
+    debugger:
+        email: mcjanek@gmail.com
+    application:
+        errorPresenter: Error
+        mapping:
+            *: App\*Module\*Presenter
+    latte:
+        macros:
+            - Nextras\Latte\Macros\RedefineMacro
+            - Nextras\Forms\Bridges\Latte\Macros\BS3InputMacros
+
+    session:
+        expiration: 14 days
+
+    database:
+        dsn: 'mysql:host=dbsrv4.web4ce.cz;dbname=pokus_modrysip_cz'
+        user:   u1202
+        password: m92dr2s3
+        options:
+            lazy: yes
+
+includes:
+    - acl.neon
+    - services.neon
+
+extensions:
+    events: Kdyby\Events\DI\EventsExtension
+
+services:
+    router: @App\RouterFactory::createRouter
+
+    formProcess:
+        class: AdminModule\FormProcess\FormProcess
+        tags: [kdyby.subscriber]
+
+
+    - AdminModule\FormProcess\PageProcess

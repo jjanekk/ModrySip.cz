@@ -1,0 +1,22 @@
+services:
+    authorizator:
+        class: Nette\Security\Permission
+        setup:
+            - addRole('editor')
+            - addRole('maker', 'editor')
+            - addRole('admin', 'maker')
+
+            - addResource('admin')
+            - addResource('nav-slider')
+            - addResource('nav-user')
+            - addResource('nav-troop')
+            - addResource('nav-nav')
+
+            - addResource('create')
+            - addResource('edit')
+
+            - allow('editor', 'edit')
+            - allow('maker', 'create')
+
+            - allow('admin', 'admin')
+            - allow('admin')

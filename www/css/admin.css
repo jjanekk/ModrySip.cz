@@ -1,0 +1,160 @@
+body {
+}
+
+pre.nette-dump{
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+#ajax-spinner {
+	margin: 15px 0 0 15px;
+	padding: 13px;
+	background: white url('../images/spinner.gif') no-repeat 50% 50%;
+	font-size: 0;
+	z-index: 123456;
+	display: none;
+}
+
+div.flash {
+	color: black;
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+a[href^="error:"] {
+	background: red;
+	color: white;
+}
+
+form .required label {
+	font-weight: bold;
+}
+
+form .error {
+	color: #D00;
+	font-weight: bold;
+}
+
+html.js .jshidden {
+	display: none;
+}
+
+.troopColor{
+    display: block;
+    height:  25px;
+    width:   25px;
+}
+
+.viewImage-img{
+    border: 2px #007700 solid;
+}
+
+.viewImage{
+    left: auto;
+    right: 25px;
+    bottom: 25px;
+    position: absolute;
+}
+
+
+.navItem{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px #f0f0f0 solid;
+}
+
+.navItemLink{
+    width: 130px;
+    display: inline-block;
+}
+
+.slider{
+
+}
+
+.slideBox{
+    position: relative;
+}
+
+.slider .button{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+}
+
+.slide{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slide .title{
+    width: 930px;
+    position: absolute;
+    height: 60px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0, 98, 107, 0.8);
+    color: #fff;
+    margin: 0px;
+}
+
+div.text{
+    margin: 15px;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.tracy-dump{
+    margin-left: 230px;
+    margin-top: 55px;
+    margin-right: 5px;
+}
+
+
+.orange{
+    color: #e38d13;
+}
+
+.blue{
+    color: #002a80;
+}
+
+.yellow{
+    color: #ffff00;
+}
+
+.red{
+    color: #DD0000;
+}
+
+.grid-col-role{
+    max-width: 150px;
+}
+
+.functionForm{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.function-list li{
+    margin-bottom: 8px;
+}
+
+.function-list .name{
+    color: #000000;
+}
+
+.grid-col-user_function_id{
+    width: 150px;
+}
+
+.grid-col-actions{
+    min-width: 130px;
+}

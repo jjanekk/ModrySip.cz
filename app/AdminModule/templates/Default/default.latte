@@ -1,0 +1,191 @@
+{block #pageTitle}
+    <i class="fa fa-dashboard"></i> Nástěnka
+    <hr/>
+{/}
+
+{block content}
+
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="fa fa-bar-chart-o fa-5x"></i>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p class="announcement-heading">{$actions->count()}</p>
+                            <p class="announcement-text">Akcí</p>
+                        </div>
+                    </div>
+                </div>
+                {if $user->isAllowed('create')}
+                <a n:href="Action:edit">
+                    <div class="panel-footer announcement-bottom">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                Vytvoř další
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {/}
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="fa fa-file-text fa-5x"></i>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p class="announcement-heading">{$pages->count()}</p>
+                            <p class="announcement-text">Stránky</p>
+                        </div>
+                    </div>
+                </div>
+                {if $user->isAllowed('create')}
+                <a n:href="Page:edit">
+                    <div class="panel-footer announcement-bottom">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                Vytvoř další
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {/}
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <i class="fa fa-calendar fa-5x"></i>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p class="announcement-heading">{$news->count()}</p>
+                            <p class="announcement-text">Novinky</p>
+                        </div>
+                    </div>
+                </div>
+                {if $user->isAllowed('create')}
+                <a n:href="News:edit">
+                    <div class="panel-footer announcement-bottom">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                Vytvoř další
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <i class="fa fa-arrow-circle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {/}
+            </div>
+        </div>
+
+    </div>
+
+    <hr/>
+
+    <div class="row">
+
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-clock-o"></i> Poslední přidané akce</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        {foreach $actions->orderBy('date_from DESC')->limit(10) as $action}
+                        <a n:href="Action:edit $action->id" class="list-group-item">
+                            <span class="badge">
+                                {if $action->date_from && $action->date_from > '0000-00-00'}
+                                    {$action->date_from|date:"j.n.Y"}
+                                {else}
+                                    <strong>Neuvedeno</strong>
+                                {/}
+                                {if $action->date_from != $action->date_to && $action->date_to > '0000-00-00'}
+                                    - {$action->date_to|date:"j.n.Y"}
+                                {/}
+                            </span>
+                            {$action->name}
+                        </a>
+                        {/}
+                    </div>
+                    <div class="text-right">
+                        <a n:href="Action:">Zobraz všechny <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-clock-o"></i> Poslední stránky</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        {foreach $pages->orderBy('date DESC')->limit(10) as $page}
+                        <a n:href="Page:edit $page->id" class="list-group-item">
+
+                                {if $page->date && $page->date > '0000-00-00'}
+                                    <span class="badge">
+                                        {$page->date|date:"j.n.Y"}
+                                     </span>
+                                {/}
+
+                            {$page->name}
+                        </a>
+                        {/}
+                    </div>
+                    <div class="text-right">
+                        <a n:href="Page:">Zobraz všechny <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-clock-o"></i> Poslední novinky</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        {foreach $news->orderBy('date DESC')->limit(10) as $new}
+                        <a n:href="News:edit $new->id" class="list-group-item">
+
+                            {if $new->date && $new->date > '0000-00-00'}
+                                <span class="badge">
+                                    {$new->date|date:"j.n.Y"}
+                                </span>
+                            {/}
+
+                            {$new->name}
+                        </a>
+                        {/}
+                    </div>
+                    <div class="text-right">
+                        <a n:href="News:">Zobraz všechny <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

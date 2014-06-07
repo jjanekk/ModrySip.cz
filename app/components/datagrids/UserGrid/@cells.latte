@@ -1,0 +1,66 @@
+{redefine #col-aplication-edit}
+    <td class="grid-col-actions">
+        <div class="btn-group">
+            <a title="Editovat" class="btn btn-info btn-sm" href="{plink edit, $row->id}">
+                <i class="fa fa-edit"></i>
+            </a>
+            <a title="Smazat" onclick="return confirm('Přejete si vymazat tuto položku?')" class="btn btn-danger btn-sm" href="{plink remove! $row->id}">
+                <i class="fa fa-trash-o"></i>
+            </a>
+        </div>
+    </td>
+{/}
+
+{redefine col-phone}
+    <td>
+        {if isset($row->phone) && (is_numeric($row->phone))}
+            {(int)$row->phone |number:0:' ':' '}
+        {/}
+    </td>
+{/}
+
+{redefine col-role}
+<td>
+    {$row->getRoleName()}
+</td>
+{/}
+
+{redefine col-active}
+    <td>
+        {if $row->active}
+            <i class="fa fa-check"></i>
+        {else}
+            <i class="fa fa-times"></i>
+        {/}
+    </td>
+{/}
+
+{redefine col-name}
+    <td>
+        {if $row->hasPhoto()}
+            <div class="pull-left" style="margin-right: 5px">
+                <img width="50" class="img-circle img-responsive" src="{$basePath}/Galleries/user/{$row->getPhoto()->getName() }" alt="Image"/>
+            </div>
+        {/}
+        <div class="pull-left">
+            {if $row->getName(false)}
+            {$row->getName(false)} <br/>
+            {/}
+            <strong>{$row->nick}</strong>
+        </div>
+    </td>
+{/}
+
+{redefine col-email}
+    <td>
+        <a href="mailto:{$row->email}">{$row->email}</a>
+    </td>
+{/}
+
+{redefine col-user_function_id}
+    <td>
+        {foreach $row->getFunctions(TRUE) as $tr}
+            {$tr->name}{sep}, {/}
+        {/}
+    </td>
+{/}

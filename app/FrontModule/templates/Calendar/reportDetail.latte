@@ -1,0 +1,54 @@
+{define #title}
+    {$report->name}
+{/}
+
+{block content}
+<section id="page-content" class="actionDetail">
+    <h2>{$report->name}</h2>
+
+    <div class="date">
+        <strong>
+            <i class="fa fa-calendar"></i>
+            {$report->date_from|date:'d.m.Y'}
+            {if $report->date_to > '0000-00-00'}
+            - {$report->date_to|date:'d.m.Y'}
+            {/}
+        </strong>
+        {if $report->getUser() && $report->getUser()->getName()}
+            |
+            <strong class="author">
+                <i class="fa fa-user"></i>
+                {$report->getUser()->getName()}
+            </strong>
+        {/}
+        |
+
+        {foreach $report->getTroops(true) as $troop}
+            {$troop->name} {sep}, {/}
+        {/}
+    </div>
+
+    <div class="actionDetail-text calendar-content">
+        {$report->report|noescape|replace:'----':''}
+    </div>
+
+    <div class="gallery-box">
+        {control gallery}
+    </div>
+
+</section>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'modysrip'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

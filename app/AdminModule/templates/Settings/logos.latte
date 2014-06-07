@@ -1,0 +1,56 @@
+{block #breadcrumb}
+{control breadcrumbs}
+{/}
+
+{block #pageTitle}
+    Sponzoři
+{/}
+
+{block #content}
+
+    <div class="row">
+
+        <div class="col-md-10">
+
+           <div class="well well-sm">
+               {form uploadImages class=>'form-inline'}
+               <fieldset>
+                   {input id}
+                   {input tag}
+
+                   <div class="form-group">
+                       {input name placeholder=>'Odkaz'}
+                   </div>
+
+                   <div class="form-group">
+                       {input upload}
+                   </div>
+
+                   <div class="form-group pull-right">
+                       {input save class=>'btn-success'}
+                   </div>
+               </fieldset>
+               {/}
+
+           </div>
+
+        </div>
+
+        <div class="col-md-10">
+
+            {foreach $logos as $logo}
+                <div style="margin-bottom: 5px; border-bottom: 1px #002a80 solid;" class="logo">
+                    <a title="Editovat" class="btn btn-sm btn-success" n:href="edit! $logo->id"><i class="fa fa-edit"></i></a>
+                    <a title="Smazat" class="btn btn-sm btn-danger" n:href="delete! $logo->id"><i class="fa fa-trash-o"></i></a>
+                    {if !empty($logo->name)}
+                    <span>Odkaz: <strong>{$logo->name}</strong></span>
+                    {/}
+                    <img class="img-responsive" src="{$basePath}/Galleries/logos/{$logo->getFile()->getName()}" alt="{$logo->name}"/>
+                </div>
+            {/}
+
+        </div>
+
+    </div>
+
+{/block}

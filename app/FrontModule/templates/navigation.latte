@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-12">
+        <nav id="navigation" class="navbar navbar-default navbar-static-top" role="navigation">
+            <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-8">
+                        <span class="sr-only">Navigace</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    {* <a class="navbar-brand">Modrý šíp</a> *}
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-8">
+                    <ul class="nav navbar-nav">
+                        {foreach $menu as $item}
+                        {if is_numeric($item->url)}
+                        <li {ifCurrent :Front:Page:show, $item->url}class="current_page_item active"{/}>
+                            {else}
+                        <li {ifCurrent $item->url}class="current_page_item active"{/}>
+                            {/}
+                            {if is_numeric($item->url)}
+                            <a title="{$item->title}" n:href=":Front:Page:show, $item->url" >{$item->name}</a>
+                            {else}
+                            <a title="{$item->title}" href="{link $item->url}">{$item->name}</a>
+                            {/}
+                        </li>
+                        {/}
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+    </div>
+</div>

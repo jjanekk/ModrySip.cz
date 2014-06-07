@@ -1,0 +1,13 @@
+<ol class="breadcrumb">
+    <li>Navigace:</li>
+    <li><a href="{plink :Admin:Default:default}"> <i class="fa fa-home"></i> Domů</a></li>
+    {foreach $args as $index => $key}
+        <li {ifCurrent $index} class="active"{/}>
+            {ifCurrent $index}
+            {$key} {? break;}
+            {else}
+            <a href="{plink $index}">{$key}</a>
+            {/}
+        </li>
+    {/}
+</ol>

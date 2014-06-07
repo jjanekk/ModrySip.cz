@@ -1,0 +1,16 @@
+{define #title}
+    {$troop->name}
+{/}
+
+{block #content}
+    <section>
+        <div class="post">
+            <h2>{$troop->name}</h2>
+
+            <div class="pageContent">
+                {$troop->home_page_description|noescape}
+            </div>
+
+        </div>
+    </section>
+{/}

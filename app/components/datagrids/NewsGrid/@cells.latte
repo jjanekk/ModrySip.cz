@@ -1,0 +1,67 @@
+{redefine col-user}
+<td>
+    {if $row->getUser() !== null}
+    <span title="{$row->getUser()->email}">{$row->getUser()->getName()}</span>
+    {/}
+</td>
+{/}
+
+{redefine col-date}
+<td>
+    {if $row->date&& $row->date > '0000-00-00'}
+    {$row->date|date:"j.n.Y"}
+    {/}
+</td>
+{/}
+
+{redefine col-scout_troop_id}
+    <td>
+        {foreach $row->getTroops(TRUE) as $tr}
+            {$tr->name} {sep} | {/}
+        {/}
+    </td>
+{/}
+
+
+{redefine col-active}
+<td>
+    {if $row->isActive()}
+        <i class="fa fa-check"></i>
+    {else}
+
+    {/}
+</td>
+{/}
+
+{redefine col-text}
+    <td>
+        {if isset($row->content) && strlen($row->content) > 6}
+        <button
+                title="Náhled novinky"
+                type="button"
+                class="btn btn-default"
+                data-container="body"
+                data-toggle="popover"
+                data-placement="right"
+                data-trigger="hover"
+                data-content="{$row->content|striptags|truncate:300|replace:'----':''}">
+            <i class="fa fa-adn"></i>
+        </button>
+        {/}
+    </td>
+{/}
+
+{redefine #col-aplication-edit}
+    <td class="grid-col-actions">
+        <div class="btn-group">
+            <a title="Editovat" class="btn btn-info btn-sm" href="{plink edit, $row->id}">
+                <i class="fa fa-edit"></i>
+            </a>
+            {if $user->isAllowed('create')}
+            <a title="Smazat" onclick="return confirm('Přejete si vymazat tuto položku?')" class="btn btn-danger btn-sm" href="{plink remove! $row->id}">
+                <i class="fa fa-trash-o"></i>
+            </a>
+            {/}
+        </div>
+    </td>
+{/}

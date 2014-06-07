@@ -1,0 +1,355 @@
+#content {
+  margin-right: -30px;
+}
+#content h2 {
+  padding-bottom: 20px !important;
+}
+#troopBox {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+#troopBox h2 {
+  margin-top: 5px;
+}
+.title i {
+  color: #000;
+}
+#page-content {
+  margin-top: 20px;
+  border-right: 1px #FFF9D7 solid;
+  padding-right: 20px;
+}
+.report .image-report {
+  width: 15%;
+}
+.report .content-report {
+  width: 80%;
+}
+.gallery-box {
+  border-top: 1px solid #bae2f0;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.gallery-box h4 {
+  margin-top: 10px;
+}
+.reportDetail .reportDetail-text {
+  font-size: 15px;
+  line-height: 22px;
+  min-height: 200px;
+}
+.last-actions {
+  padding-top: 10px;
+}
+.last-actions .panel {
+  background: #fff;
+}
+.last-actions:hover {
+  background: #fcf8e3;
+}
+.last-actions:hover h3 {
+  color: #d2322d;
+}
+.last-actions h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.last-actions .name {
+  font-size: 12px;
+}
+.page-block {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px #00626B dashed;
+}
+.page-block .title {
+  font-size: 28px !important;
+  color: #00626B !important;
+  padding-bottom: 10px !important;
+}
+.page-block:last-child {
+  border-bottom: none;
+}
+.page-block.about {
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 40px !important;
+  margin-bottom: 25px;
+}
+.page-block.about a strong {
+  color: #d2322d;
+}
+.page-block.about p {
+  line-height: 150%;
+  text-align: justify;
+}
+.page-block.about .title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 35px !important;
+  text-transform: none !important;
+}
+.page-block.important .panel:hover {
+  background: #FFF9D7;
+  color: #000;
+}
+.aboutAs {
+  font-size: 15px;
+  line-height: 22px;
+}
+.actionDetail .date {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #bae2f0;
+  padding-bottom: 5px;
+}
+.userForm {
+  margin-bottom: 40px;
+  margin-top: -15px;
+}
+.userForm label {
+  font-size: 18px;
+}
+.gallery-list {
+  border-top: 1px solid #bae2f0;
+  padding-top: 10px;
+}
+.gallery-list .gallery-item {
+  margin-bottom: 30px;
+}
+.gallery-list .gallery-item h3 {
+  font-size: 20px;
+  line-height: 26px;
+}
+.aboutPage .aboutAs {
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+.aboutPage h3 {
+  font-size: 23px;
+}
+.calendar.troop-list .troop-item-name {
+  margin-bottom: 10px;
+}
+.calendar.troop-list .troop-item-name.active {
+  font-weight: bolder;
+}
+.filterBox h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #adadad;
+}
+.filterBox h5 {
+  margin-bottom: 5px;
+}
+.filterBox .content .pull-left {
+  margin-right: 15px;
+}
+#importantMessageBanner li {
+  background: #fcf8e3;
+}
+#importantMessageBanner li h3 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 10px;
+  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#importantMessageBanner li p {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+#importantMessageBanner li:hover {
+  background: #e3f4f9;
+}
+#importantMessageBanner li:hover p {
+  color: #000;
+}
+#troopBox {
+  background: #fcf8e3;
+  padding: 10px;
+}
+#troopBox .all {
+  margin-bottom: 20px;
+}
+#troopBox h4 {
+  font-size: 20px;
+  font-weight: bolder;
+  border-bottom: 1px solid #00626B;
+  padding-bottom: 5px;
+}
+#troopBox h5 {
+  margin-top: 10px;
+}
+#troopBox ul {
+  margin-top: 20px !important;
+}
+#troopBox a {
+  color: #000 !important;
+}
+#troopBox a:hover {
+  text-decoration: none;
+}
+#headers {
+  margin-top: 30px;
+}
+#headers .panel {
+  margin-bottom: 20px;
+}
+#headers .panel:hover {
+  background: #fcf8e3;
+}
+#headers h4 {
+  font-size: 15px;
+}
+.calendar-content {
+  font-size: 17px;
+  line-height: 22px;
+  padding-bottom: 10px;
+  color: #000000;
+}
+.calendar-content p {
+  margin-bottom: 10px;
+  line-height: 150% !important;
+}
+.actionCalendar .panel-body {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.actionCalendar p {
+  line-height: 20px;
+}
+.colorBox-a {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  height: 15px;
+  width: 15px;
+}
+.colorBox-a .colorBox {
+  display: block;
+}
+.colorBox {
+  height: 15px;
+  width: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #885500;
+  display: inline-block;
+}
+.colorBox .color-text {
+  display: none;
+  color: #000000;
+}
+.carousel .carousel-caption {
+  left: 5%;
+  right: 5%;
+  font-size: 260%;
+  position: absolute;
+  z-index: 30;
+  padding-bottom: 0px;
+}
+.carousel .carousel-caption h3 {
+  color: #fff;
+}
+.carousel .line {
+  width: 100%;
+  position: absolute;
+  height: 33%;
+  background: rgba(25, 149, 220, 0.3);
+  z-index: 1;
+  bottom: -1px;
+}
+#header-wrapper {
+  margin-top: 20px;
+}
+#navigation {
+  -moz-box-shadow: 0px 1px 11px #000000;
+  -webkit-box-shadow: 0px 1px 11px #000000;
+  box-shadow: 0px 1px 11px #000000;
+}
+#whiteBackground {
+  background: #fff !important;
+  -moz-box-shadow: 0px 0px 11px #000000;
+  -webkit-box-shadow: 0px 0px 11px #000000;
+  box-shadow: 0px 0px 11px #000000;
+}
+#menu {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.slideShow {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.sidebar {
+  margin-left: 25px;
+}
+.sidebar h2 {
+  font-size: 170%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CACACA;
+  color: #DD0000;
+  margin-top: 30px;
+  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#navigation {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 0px;
+}
+.sideBox {
+  margin-bottom: 20px;
+}
+#content h2 {
+  font-family: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px !important;
+}
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    font-size: 130%;
+  }
+}
+.logos {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.logos hr {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.logos h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.logos .item {
+  float: left;
+  margin-right: 5px;
+  width: 150px;
+  border: 1px solid transparent;
+}
+.logos .item:hover {
+  border: 1px solid #CACACA;
+}
+.logos .item a {
+  width: 150px;
+}
+.panel-link {
+  color: #000;
+}
+.panel-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+.page-index-report {
+  border-bottom: 2px #00626B dashed !important;
+}

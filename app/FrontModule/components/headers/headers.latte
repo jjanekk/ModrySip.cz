@@ -1,0 +1,43 @@
+<div id="headers">
+    <h3> Vedení střediska </h3>
+
+    <div style="margin-top: 15px">
+
+        <hr/>
+
+        {foreach $headers->orderBy('level') as $item}
+        <div class="panel panel-default">
+            <div class="panel-heading"><h4><strong>
+                {foreach $item->getFunctions(TRUE) as $fun}
+                    <span n:if="$fun->main">{$fun->name} </span>
+                {/}
+                </h4></div>
+            <div class="panel-body">
+                <div class="row">
+                    {if $item->hasPhoto()}
+                    <div class="col-md-2">
+                        <img width="90" class="img-circle img-thumbnail" src="{$basePath}/Galleries/user/{$item->getPhoto()->getName()}" alt="{$item->getPhoto()->getName()}"/>
+                    </div>
+                    {/}
+                    <div class="col-md-10 content">
+                        {ifset $item->nick}
+                        <p><strong>{$item->nick}</strong></p>
+                        {/}
+                        <p><strong>{$item->getName()}</strong></p>
+                        {if isset($item->email) && !empty($item->email)}
+                        <p> Email: <strong>{$item->email|replace:"@":"[zavinac]"}</strong> </p>
+                        {/}
+                        {if isset($item->phone) && is_numeric($item->phone)}
+                        <p> Mobil: <strong>{(int)$item->phone|number:0:' ':' '}</strong> </p>
+                        {/}
+                        {ifset $item->date_of_birth}
+                        <p> Datum narození: <strong>{$item->date_of_birth|date:"j.n.Y"}</strong> </p>
+                        {/}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/}
+
+    </div>
+</div>

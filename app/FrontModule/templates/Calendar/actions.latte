@@ -1,0 +1,96 @@
+{define #title}
+    Akce
+{/}
+
+
+{block content}
+    <section id="page-content">
+        <div class="post">
+
+            <h2>Kalenář akcí</h2>
+
+            <div class="calendar troop-list clearfix well">
+                {if $presenter->isHome()}
+                <h5 class="title">Seznam barev oddílu</h5>
+                <div class="clearfix well-item">
+                    {foreach $scout_troops as $troop}
+                    <a n:if="$troop->showInList || $troop->id == 10" title="{$troop->name}" class="pull-left troop-item-name {if $troop->id == $activeId}active{/}" n:href="filter action, $troop->id">
+                        {ifset $troop->color}
+                        <i class="fa colorBox" style="background: {$troop->color|noescape}"></i>
+                        {/}
+                        <span {if $troop->id == $activeId}class="label label-default"{/}>{$troop->name}</span>
+                    </a>
+                    {/}
+                </div>
+                {/if}
+
+                <div class="filterBox">
+                    <h4><a class="filter-toggle" href="#">Filtrování obsahu</a></h4>
+                    <div class="content clearfix" >
+                        <div class="pull-left">
+                            {form filterForm class=>'form-inline'}
+                                {input type}
+                                <div class="form-group">
+                                    {label schoolYear class=>'sr-only' /}
+                                    {input schoolYear}
+                                </div>
+                                <div class="form-group">
+                                    {label year class=>'sr-only' /}
+                                    {input year}
+                                </div>
+                                <div class="form-group">
+                                    {label month class=>'sr-only' /}
+                                    {input month}
+                                </div>
+                            <div class="form-group">
+                                {input filter class => 'btn btn-success'}
+                            </div>
+                            {*
+                            <div class="form-group">
+                                {input filterExit class => 'btn btn-info'}
+                            </div>
+                            *}
+                            {/}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="margin-bottom: 10px"></div>
+
+            <div class="actionCalendar">
+                {foreach $actions as $action}
+                <div class="panel panel-default">
+                    <div  class="panel-heading clearfix">
+                        <div class="name">
+                            <a n:href="actionDetail $action->id"><strong class="pull-left"> {$action->name}</strong></a>
+                            <div class="pull-left">
+                                {foreach $action->getTroops(true) as $troop}
+                                <a title="{$troop->name}" class="colorBox-a">
+                                    <span  class="colorBox" style="background: {$troop->color|noescape}"></span>
+                                </a>
+                                {/}
+                            </div>
+                        </div>
+                        <div class="date"><strong>
+                                <i class="fa fa-calendar"></i>
+                                <span title="{$presenter->getTranslateDate($action->date_from)}" >{$action->date_from|date:'d.m.Y'}</span>
+                                {if $action->date_to > '0000-00-00'}
+                                - <span title="{$presenter->getTranslateDate($action->date_to)}" >{$action->date_to|date:'d.m.Y'}</span>
+                                {/}
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        {$action->action|noescape}
+                    </div>
+                    {* <div class="panel-footer">Panel footer</div> *}
+                </div>
+                {/}
+
+                {control paginator}
+
+            </div>
+        </div>
+    </section>

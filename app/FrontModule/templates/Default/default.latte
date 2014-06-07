@@ -1,0 +1,93 @@
+{define #title}
+    Homepege
+{/}
+
+{block content}
+    <section id="page-content">
+
+        <div class="page-block about">
+            {if $presenter->isHome()}
+                <h2 class="title">
+                    Vítejte
+                </h2>
+                {$presenter->activeTroop->home_page_description|noescape}
+            {else}
+                <h2>O nás</h2>
+                {$presenter->activeTroop->home_page_description|noescape}
+            {/}
+        </div>
+
+        <div class="page-block page-index-report">
+            <div class="row">
+                <div class="col-md-6 last-actions actionCalendar">
+                    <h3>Budoucí akce</h3>
+                    {include calendar actions => $actions, truncate => 300, isAction => true}
+                </div>
+
+                <div class="col-md-6 last-actions actionCalendar">
+                    <h3>Poslední reportáže</h3>
+                    {include calendar actions => $reports, truncate => 300, isAction => false}
+                </div>
+            </div>
+        </div>
+        {*
+        <div class="page-block">
+            <h2 class="title">
+                Sponzorují nás
+            </h2>
+            <div>
+                Sponzoři
+            </div>
+        </div>
+        *}
+
+    </section>
+
+
+    {define calendar}
+        {foreach $actions as $action}
+        <div class="panel panel-default">
+            <div  class="panel-heading clearfix">
+                <div class="name">
+                    {if $isAction}
+                        <a title="{$action->name}" href="{link Calendar:actionDetail, $action->id}"><strong class="pull-left">{$action->name|truncate:25}</strong></a>
+                    {else}
+                        <a title="{$action->name}" href="{link Calendar:reportDetail, $action->id}"><strong class="pull-left">{$action->name|truncate:25}</strong></a>
+                    {/}
+
+                    <div class="pull-left">
+                        {foreach $action->getTroops(TRUE) as $troop}
+                        <a title="{$troop->name}" class="colorBox-a">
+                            <span  class="colorBox" style="background: {$troop->color|noescape}">
+                                <span class="color-text">{$troop->name}</span>
+                            </span>
+                        </a>
+                        {/}
+                    </div>
+                </div>
+                <div class="date"><strong>
+                        <i class="fa fa-calendar"></i>
+                        <span title="{$presenter->getTranslateDate($action->date_from)}" >{$action->date_from|date:'d.m.Y'}</span>
+                        {if $action->date_to > '0000-00-00'}
+                        - <span title="{$presenter->getTranslateDate($action->date_to)}" >{$action->date_to|date:'d.m.Y'}</span>
+                        {/}
+                    </strong>
+                </div>
+            </div>
+            <div class="panel-body">
+                {if $isAction}
+                <a class="panel-link" title="{$action->name}" n:href="Calendar:actionDetail, $action->id">
+                {else}
+                <a class="panel-link" title="{$action->name}" n:href="Calendar:reportDetail, $action->id">
+                {/}
+                    {if $isAction}
+                    {$action->action|noescape|striptags|truncate:$truncate}
+                    {else}
+                    {$action->report|noescape|striptags|truncate:$truncate|replace:"----":""}
+                    {/}
+                </a>
+
+            </div>
+        </div>
+        {/}
+    {/}

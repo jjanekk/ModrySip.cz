@@ -1,0 +1,21 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+Editace - Akce a rubtiky <br/>
+<div class="btn-group">
+    <a target="_blank" class="btn btn-sm btn-success" n:href=":Front:Calendar:actionDetail $presenter->id">Zobrazit jako akci</a>
+    <a target="_blank" class="btn btn-sm btn-info" n:href=":Front:Calendar:reportDetail $presenter->id">Zobrazit jako rubtiku</a>
+</div>
+{/}
+
+{block #content}
+<ul class="nav nav-pills">
+    <li><a n:href="edit, $presenter->id">Editace</a></li>
+    <li class="active"><a>Fotogalerie</a></li>
+</ul>
+
+{dump $gallery}
+
+{control gallery $gallery, TRUE}

@@ -1,0 +1,37 @@
+{redefine col-description}
+    <td>
+       {$row->description|truncate:300|striptags}
+    </td>
+{/}
+
+{redefine col-color}
+<td>
+    <span class="troopColor" style="background: {$row->color|noescape}">
+
+    </span>
+</td>
+{/}
+
+{redefine col-showInList}
+<td>
+    {if $row->showInList}
+        <i class="fa fa-check"></i>
+    {else}
+        <i class="fa fa-times"></i>
+    {/}
+</td>
+{/}
+
+
+{redefine #col-aplication-edit}
+    <td class="grid-col-actions">
+        <div class="btn-group">
+            <a title="Editovat" class="btn btn-info btn-sm" href="{plink edit, $row->id}">
+                <i class="fa fa-edit"></i>
+            </a>
+            <a title="Smazat" onclick="return confirm('Přejete si vymazat tuto položku?')" class="btn btn-danger btn-sm" href="{plink remove! $row->id}">
+                <i class="fa fa-trash-o"></i>
+            </a>
+        </div>
+    </td>
+{/}

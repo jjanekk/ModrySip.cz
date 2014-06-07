@@ -1,0 +1,2 @@
+##Redakční systém skautů
+    Popis

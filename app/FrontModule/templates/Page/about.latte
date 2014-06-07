@@ -1,0 +1,16 @@
+{define #title}
+    {$page->name}
+{/}
+
+
+{block content}
+<section id="page-content" class="aboutPage">
+    <h2>{$page->name}</h2>
+
+    {$page->content|noescape}
+
+    <div class="headers">
+        {control headers}
+    </div>
+
+</section>

@@ -1,0 +1,30 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+    <a class="btn btn-primary" n:href="slidersBox $presenter->troopId"> <i class="fa fa-backward"></i> </a> Slider
+{/}
+
+{block #content}
+
+    <div class="row">
+        <div class="col-lg-7">
+            {form edit}
+                {input troop_id}
+                <div class="form-group">
+                    <label n:name="name">Název</label>
+                    <input n:name="name" class="form-control" placeholder="Název">
+                </div>
+
+                <div class="form-group">
+                    <label n:name="image">Obrázek</label>
+                    <input n:name="image" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" n:name="save" type="text" class="btn btn-success"/>
+                </div>
+            {/}
+        </div>
+    </div>

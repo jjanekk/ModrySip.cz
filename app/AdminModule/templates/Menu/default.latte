@@ -1,0 +1,24 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+   <i class="fa fa-list"></i> Hlavní navigace
+{/}
+
+{block #content}
+
+    <div class="well well-sm">
+        <p>
+            <i class="fa fa-info"></i> Každý oddíl má svou navigaci. Prosím vyberte oddíl, jemuž chcete navigaci editovat.
+        </p>
+    </div>
+
+    <div>
+        <ul>
+            {foreach $troops as $troop}
+                <li><a n:href="troopNav $troop->id">{$troop->name}</a></li>
+            {/}
+        </ul>
+    </div>
+

@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f65720c3-bc98-4742-94ba-44b786a34b0c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/orm/collection/OrmEntityCollection.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/acl.neon" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/services.neon" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.neon" afterPath="$PROJECT_DIR$/app/config/config.neon" />
+    </list>
+    <ignored path="scout2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="scout2" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="9" selection-start="34" selection-end="34" vertical-scroll-proportion="0.02852349" vertical-offset="0" max-vertical-offset="596">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/vendor/nextras/forms/LICENSE" />
+        <option value="$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/Entity.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Action.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/File.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Scout_troop.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Section.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Slider.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/User_function.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Data.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/User.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Page.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/News.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/NavItem.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/CalendarPresenter.php" />
+        <option value="$PROJECT_DIR$/vendor/nextras/forms/Nextras/Forms/Bridges/Latte/Macros/BaseInputMacros.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Gallery.php" />
+        <option value="$PROJECT_DIR$/app/orm/Entity/Entity.php" />
+        <option value="$PROJECT_DIR$/app/bootstrap.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/BaseDataGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/ActionGrid/ActionGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/FileGrid/FileGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/NewsGrid/NewsGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/PageGrid/PageGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/TroopGrid/PageGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/dataGrids/UserGrid/UserGrid.php" />
+        <option value="$PROJECT_DIR$/www/front/css/style.css" />
+        <option value="$PROJECT_DIR$/app/FrontModule/templates/Calendar/actionDetail.latte" />
+        <option value="$PROJECT_DIR$/app/FrontModule/templates/Calendar/reportDetail.latte" />
+        <option value="$PROJECT_DIR$/www/front/js/main.js" />
+        <option value="$PROJECT_DIR$/www/front/css/main.css" />
+        <option value="$PROJECT_DIR$/www/front/css/main.less" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/BaseDataGrid.php" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/@baseTemplate.latte" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/ActionGrid/@cells.latte" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/NewsGrid/@cells.latte" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/PageGrid/@cells.latte" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/TroopGrid/@cells.latte" />
+        <option value="$PROJECT_DIR$/app/components/datagrids/UserGrid/@cells.latte" />
+        <option value="$PROJECT_DIR$/app/others/presenters/BasePresenter.php" />
+        <option value="$PROJECT_DIR$/app/components/Gallery/Gallery.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/templates/Default/default.latte" />
+        <option value="$PROJECT_DIR$/app/FrontModule/presenters/FrontPresenter.php" />
+        <option value="$PROJECT_DIR$/app/FrontModule/templates/@layout.latte" />
+        <option value="$PROJECT_DIR$/composer.lock" />
+        <option value="$PROJECT_DIR$/app/orm/entity/BaseEntity.php" />
+        <option value="$PROJECT_DIR$/app/orm/collection/OrmEntityCollection.php" />
+        <option value="$PROJECT_DIR$/app/config/acl.neon" />
+        <option value="$PROJECT_DIR$/app/config/services.neon" />
+        <option value="$PROJECT_DIR$/app/config/config.neon" />
+        <option value="$PROJECT_DIR$/readme.md" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scout2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scout2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scout2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\scout2\app\components\dataGrids" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f65720c3-bc98-4742-94ba-44b786a34b0c" name="Default" comment="" />
+      <created>1401985339703</created>
+      <updated>1401985339703</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19033232" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24848942" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/components/Gallery/gallery.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="97" selection-start="971" selection-end="975" vertical-scroll-proportion="0.5022727" vertical-offset="0" max-vertical-offset="901" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/Reflection/EntityType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="13" selection-start="650" selection-end="650" vertical-scroll-proportion="0.34309134" vertical-offset="98" max-vertical-offset="3281">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/orm/entity/Gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="441" selection-end="441" vertical-scroll-proportion="0.4180328" vertical-offset="0" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="42" selection-start="509" selection-end="509" vertical-scroll-proportion="0.3479021" vertical-offset="56" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/ActionGrid/ActionGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="435" selection-end="435" vertical-scroll-proportion="0.4458042" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/NewsGrid/NewsGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="648" selection-end="648" vertical-scroll-proportion="0.65384614" vertical-offset="0" max-vertical-offset="697">
+          <folding>
+            <element signature="e#42#70#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/FileGrid/FileGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="149" selection-end="171" vertical-scroll-proportion="0.26748252" vertical-offset="34" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/PageGrid/PageGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="27" selection-start="556" selection-end="556" vertical-scroll-proportion="0.5646853" vertical-offset="0" max-vertical-offset="646">
+          <folding>
+            <element signature="e#41#69#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/TroopGrid/PageGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="610" selection-end="610" vertical-scroll-proportion="0.5646853" vertical-offset="17" max-vertical-offset="629">
+          <folding>
+            <element signature="e#41#69#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/UserGrid/UserGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="181" selection-end="181" vertical-scroll-proportion="0.1486014" vertical-offset="0" max-vertical-offset="833">
+          <folding>
+            <element signature="e#123#151#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/front/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="916" selection-end="916" vertical-scroll-proportion="0.5419463" vertical-offset="187" max-vertical-offset="6035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Calendar/reportDetail.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="42" selection-start="551" selection-end="551" vertical-scroll-proportion="0.35402685" vertical-offset="112" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Calendar/actionDetail.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/orm/entity/Action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="21" selection-start="520" selection-end="526" vertical-scroll-proportion="-0.36666667" vertical-offset="566" max-vertical-offset="2720">
+          <folding>
+            <element signature="e#30#69#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/front/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="15" selection-start="465" selection-end="465" vertical-scroll-proportion="0.5704698" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/front/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="339" column="22" selection-start="6049" selection-end="6049" vertical-scroll-proportion="0.0" vertical-offset="5524" max-vertical-offset="6120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/front/css/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="413" column="23" selection-start="5929" selection-end="5929" vertical-scroll-proportion="0.61284405" vertical-offset="6687" max-vertical-offset="7565">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/datagrid/bootstrap-style/bootstrap3.nextras.datagrid.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="23" selection-start="386" selection-end="386" vertical-scroll-proportion="0.5989933" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/datagrid/bootstrap-style/@bootstrap3.extended-pagination.datagrid.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/datagrid/bootstrap-style/@bootstrap3.datagrid.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nextras/datagrid/src/Datagrid.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="18" selection-start="2291" selection-end="2291" vertical-scroll-proportion="-0.28301886" vertical-offset="1661" max-vertical-offset="3570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/@baseTemplate.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="37" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.65604025" vertical-offset="204" max-vertical-offset="1020">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/BaseDataGrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="465" selection-end="465" vertical-scroll-proportion="0.42728904" vertical-offset="0" max-vertical-offset="557">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/ActionGrid/@cells.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="11" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.41680962" vertical-offset="879" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/FileGrid/@cells.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/NewsGrid/@cells.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="30" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.5334477" vertical-offset="590" max-vertical-offset="1224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/PageGrid/@cells.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="11" selection-start="439" selection-end="439" vertical-scroll-proportion="0.69982845" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/TroopGrid/@cells.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="401" selection-end="401" vertical-scroll-proportion="0.50428814" vertical-offset="131" max-vertical-offset="714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/datagrids/UserGrid/@cells.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="495" selection-end="495" vertical-scroll-proportion="0.34991422" vertical-offset="0" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AdminModule/presenters/AdminPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7894737" vertical-offset="450" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/others/presenters/BasePresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="9" selection-start="629" selection-end="843" vertical-scroll-proportion="-11.346154" vertical-offset="147" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/nette/application/src/Application/UI/PresenterComponent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="544" selection-end="544" vertical-scroll-proportion="-2.123878" vertical-offset="1489" max-vertical-offset="6885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/components/Gallery/Gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="5" selection-start="2522" selection-end="2522" vertical-scroll-proportion="0.2962298" vertical-offset="1280" max-vertical-offset="2652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/Default/default.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="3" selection-start="32" selection-end="32" vertical-scroll-proportion="-0.2915952" vertical-offset="204" max-vertical-offset="1666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/presenters/FrontPresenter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="58" selection-start="2183" selection-end="2183" vertical-scroll-proportion="-15.038462" vertical-offset="782" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/FrontModule/templates/@layout.latte">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="0" selection-start="3440" selection-end="3440" vertical-scroll-proportion="2.1630824" vertical-offset="0" max-vertical-offset="2907">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/yetorm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/Reflection/AnnotationProperty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/Record.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.3385963" vertical-offset="2473" max-vertical-offset="3043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/EntityCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.9649124" vertical-offset="2830" max-vertical-offset="3400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="20" selection-start="2228" selection-end="2241" vertical-scroll-proportion="1.745614" vertical-offset="875" max-vertical-offset="2159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/uestla/yetorm/src/YetORM/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3451">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="24" selection-start="2495" selection-end="2495" vertical-scroll-proportion="1.9193548" vertical-offset="0" max-vertical-offset="26214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/orm/facade/Mapper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/orm/repository/Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/orm/collection/OrmEntityCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="4" selection-start="200" selection-end="200" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/orm/entity/BaseEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="422" selection-end="422" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="952">
+          <folding>
+            <element signature="e#29#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/acl.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="603" selection-end="603" vertical-scroll-proportion="0.6263158" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="967" selection-end="967" vertical-scroll-proportion="-24.538462" vertical-offset="76" max-vertical-offset="952">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.neon">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="47" selection-start="633" selection-end="633" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="34" selection-end="34" vertical-scroll-proportion="0.02852349" vertical-offset="0" max-vertical-offset="596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

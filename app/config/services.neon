@@ -1,0 +1,19 @@
+services:
+    - App\RouterFactory
+    - Orm\Repository\Actions
+    - Orm\Repository\Pages
+    - Orm\Repository\News
+    - Orm\Repository\Scout_troops
+    - Orm\Repository\Users
+    - Orm\Repository\User_functions
+    - Orm\Repository\Galleries
+    - Orm\Repository\Navigations
+    - Orm\Repository\Sliders
+    - Orm\Repository\Settings
+    - components\Gallery\UploadFiles(%wwwDir%/Galleries)
+    - Orm\Repository\Files(%wwwDir%/Galleries, ...)
+    - components\Gallery\Gallery
+    - components\breadcrumb\Breadcrumb
+    - FrontModule\components\headers\Headers
+    - Orm\Facade\Mapper
+    - AdminModule\FormProcess\FormProcessFacade

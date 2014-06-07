@@ -1,0 +1,22 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+Slider
+{/}
+
+{block #content}
+    <div class="well well-sm">
+        <p>
+            Slider se rozlišuje podle aktivního oddlílu.
+        </p>
+    </div>
+
+    <div>
+        <ul>
+            {foreach $troops as $troop}
+                <li><a n:href="slidersBox $troop->id">{$troop->name}</a></li>
+            {/}
+        </ul>
+    </div>

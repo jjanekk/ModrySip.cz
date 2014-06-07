@@ -1,0 +1,6 @@
+{
+    "require": {
+        "nextras/latte-macros": "1.1.*@dev",
+        "nextras/datagrid": "v2.1.0-RC2"
+    }
+}

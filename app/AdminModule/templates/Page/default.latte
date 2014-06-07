@@ -1,0 +1,13 @@
+{block #breadcrumb}
+    {control breadcrumbs}
+{/}
+
+{block #pageTitle}
+    {if $user->isAllowed('create')}
+        <a class="btn btn-success" n:href="edit, null"><i class="fa fa-plus"></i></a>
+    {/}
+    Stránky
+{/}
+
+{block #content}
+    {control pageGrid}
